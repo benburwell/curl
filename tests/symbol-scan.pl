@@ -176,5 +176,6 @@ if($summary) {
 }
 
 if($misses) {
-    exit 2; # there are stuff to attend to!
+    exit 0; # there are stuff to attend to!
 }
+print "All OK\n";

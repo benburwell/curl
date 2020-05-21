@@ -113,6 +113,7 @@ bool curl_win32_idn_to_ascii(const char *in, char **out);
 #include "inet_ntop.h"
 #include "http_ntlm.h"
 #include "curl_rtmp.h"
+#include "gemini.h"
 #include "gopher.h"
 #include "mqtt.h"
 #include "http_proxy.h"
@@ -145,7 +146,7 @@ static unsigned int get_protocol_family(unsigned int protocol);
  * Protocol table. Schemes (roughly) in 2019 popularity order:
  *
  * HTTPS, HTTP, FTP, FTPS, SFTP, FILE, SCP, SMTP, LDAP, IMAPS, TELNET, IMAP,
- * LDAPS, SMTPS, TFTP, SMB, POP3, GOPHER POP3S, RTSP, RTMP, SMBS, DICT
+ * LDAPS, SMTPS, TFTP, SMB, POP3, GOPHER POP3S, RTSP, RTMP, SMBS, DICT, GEMINI
  */
 static const struct Curl_handler * const protocols[] = {
 
@@ -247,6 +248,10 @@ static const struct Curl_handler * const protocols[] = {
 
 #ifndef CURL_DISABLE_DICT
   &Curl_handler_dict,
+#endif
+
+#ifndef CURL_DISABLE_GEMINI
+  &Curl_handler_gemini,
 #endif
 
   (struct Curl_handler *) NULL
@@ -4091,6 +4096,10 @@ static unsigned int get_protocol_family(unsigned int protocol)
 
   case CURLPROTO_GOPHER:
     family = CURLPROTO_GOPHER;
+    break;
+
+  case CURLPROTO_GEMINI:
+    family = CURLPROTO_GEMINI;
     break;
 
   case CURLPROTO_SMB:

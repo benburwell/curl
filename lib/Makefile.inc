@@ -51,6 +51,7 @@ LIB_CFILES = altsvc.c amigaos.c asyn-ares.c asyn-thread.c base64.c            \
   curl_ntlm_core.c curl_ntlm_wb.c curl_path.c curl_range.c curl_rtmp.c        \
   curl_sasl.c curl_sspi.c curl_threads.c dict.c dotdot.c easy.c escape.c      \
   file.c fileinfo.c formdata.c ftp.c url.c ftplistparser.c getenv.c getinfo.c \
+  gemini.c \
   gopher.c hash.c hmac.c hostasyn.c hostcheck.c hostip.c hostip4.c hostip6.c  \
   hostsyn.c http.c http2.c http_chunks.c http_digest.c http_negotiate.c       \
   http_ntlm.c http_proxy.c idn_win32.c if2ip.c imap.c inet_ntop.c inet_pton.c \
@@ -70,6 +71,7 @@ LIB_HFILES = altsvc.h amigaos.h arpa_telnet.h asyn.h conncache.h connect.h    \
   curl_printf.h curl_range.h curl_rtmp.h curl_sasl.h curl_sec.h curl_setup.h  \
   curl_setup_once.h curl_sha256.h curl_sspi.h curl_threads.h curlx.h dict.h   \
   dotdot.h easyif.h escape.h file.h fileinfo.h formdata.h ftp.h url.h         \
+  gemini.h \
   ftplistparser.h getinfo.h gopher.h hash.h hostcheck.h hostip.h http.h       \
   http2.h http_chunks.h http_digest.h http_negotiate.h http_ntlm.h            \
   http_proxy.h if2ip.h imap.h inet_ntop.h inet_pton.h llist.h memdebug.h      \

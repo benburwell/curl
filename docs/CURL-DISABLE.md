@@ -24,6 +24,10 @@ Disable the FILE protocol
 
 Disable the FTP (and FTPS) protocol
 
+## CURL_DISABLE_GEMINI
+
+Disable the Gemini protocol.
+
 ## CURL_DISABLE_GOPHER
 
 Disable the GOPHER protocol.

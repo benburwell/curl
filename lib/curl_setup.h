@@ -196,6 +196,9 @@
 #  ifndef CURL_DISABLE_GOPHER
 #    define CURL_DISABLE_GOPHER
 #  endif
+#  ifndef CURL_DISABLE_GEMINI
+#    define CURL_DISABLE_GEMINI
+#  endif
 #  ifndef CURL_DISABLE_SMB
 #    define CURL_DISABLE_SMB
 #  endif

@@ -54,6 +54,7 @@ CURLcode get_libcurl_info(void)
     { "file",   CURLPROTO_FILE   },
     { "ftp",    CURLPROTO_FTP    },
     { "ftps",   CURLPROTO_FTPS   },
+    { "gemini", CURLPROTO_GEMINI },
     { "gopher", CURLPROTO_GOPHER },
     { "http",   CURLPROTO_HTTP   },
     { "https",  CURLPROTO_HTTPS  },
